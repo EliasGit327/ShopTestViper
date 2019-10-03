@@ -1,0 +1,23 @@
+import UIKit
+//import POSUtils
+
+final class {{ module_info.name }}ViewController: UIViewController, StoryboardInstantiable {
+	static var storyboardName: String = "{{ module_info.name }}ViewController"
+    var output: {{ module_info.name }}PresenterOutput!
+
+    // MARK: - Life cycle
+    override func viewDidLoad() {
+    	let configurator = {{ module_info.name }}ModuleConfigurator()
+    	configurator.configureModule(for: self)
+        super.viewDidLoad()
+        output.viewIsReady()
+    }
+}
+
+// MARK: - {{ module_info.name }}ViewInput
+
+extension {{ module_info.name }}ViewController: {{ module_info.name }}ViewInput {
+	func setupInitialState() {
+        
+    }
+}

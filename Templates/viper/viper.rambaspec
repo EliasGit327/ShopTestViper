@@ -1,0 +1,34 @@
+# Template information section
+name: "viper"
+summary: "Swift VIPER module template with UIViewController playing as a View."
+author: "Postolachi Ivan"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+
+# Storyboard layer
+- {name: ./ViewController.storyboard,  path: Code/Storyboard.storyboard.liquid}
+
+# View layer
+- {name: View/ViewInput.swift,  path: Code/View/view_input.swift.liquid}
+- {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
+
+# Presenter layer
+- {name: Presenter/PresenterInput.swift, path: Code/Presenter/presenter_input.swift.liquid}
+- {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+- {name: Presenter/PresenterOutput.swift, path: Code/Presenter/presenter_output.swift.liquid}
+
+# Interactor layer
+- {name: Interactor/InteractorOutput.swift, path: Code/Interactor/interactor_output.swift.liquid}
+- {name: Interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
+
+# Router layer
+- {name: Router/RouterInput.swift, path: Code/Router/router_input.swift.liquid}
+- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
+
+# Configurator
+- {name: Configurator/Configurator.swift, path: Code/Configurator/configurator.swift.liquid}
+
