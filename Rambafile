@@ -1,0 +1,23 @@
+### Headers settings
+company: Elias
+
+### Xcode project settings
+project_name: shopViperTest
+xcodeproj_path: shopViperTest.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: shopViperTest
+
+# The file path for new modules
+project_file_path: shopViperTest/Modules
+
+# The Xcode group path to new modules
+project_group_path: shopViperTest/Modules
+
+### Dependencies settings section
+podfile_path: podfile
+
+### Templates
+templates:
+- {name: swift, git: 'https://bitbucket.org/postolaki/swiftviper/src/master/'}
